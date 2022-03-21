@@ -1,0 +1,89 @@
+.sidebar{
+    flex:1;
+    border-right: 0.5px solid rgb(230, 227, 227);
+    min-height: 100vh;
+    // background: #263238;
+
+    .top{
+        height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #3e8ef7;
+        box-shadow: 0 2px 4px rgb(0 0 0 / 8%);
+        .logo{
+            font-size: 20px;
+            font-weight: 600;
+            color: #fff;
+        }
+    }
+
+    .center{
+        padding-left: 10px;
+        ul{
+            margin: 0;
+            padding: 0;
+            list-style: none;
+
+            .title{
+                font-size: 12px;
+                color:#76838f;
+                font-weight: bold;
+                margin-top: 15px;
+                margin-bottom: 5px;
+            }
+
+            li{
+                display: flex;
+                align-items: center;
+                padding: 5px;
+                cursor: pointer;
+                &:hover{
+                    background-color: #E4EAEC;
+                   .icon{
+                        color: #76838f;
+                    }
+    
+                    span{
+                        color: #76838f;
+                        font-weight: bold;
+                    }
+
+                }
+                .icon{
+                    font-size: 18px;
+                    color: #0B69E3;
+                }
+
+                span{
+                    font-size: 14px;
+                    color:#76838f;
+                    margin-left: 10px;
+                }
+            }
+
+        }
+    }
+
+    .bottom{
+        display: flex;
+        align-items: center;
+        padding: 15px;
+
+        .colorOption{
+            width: 20px;
+            height: 20px;
+            border-radius: 5px;
+            border: 1px solid #0B69E3;
+            cursor: pointer;
+            margin: 5px;
+            &:nth-child(1){
+                background-color: whitesmoke;
+            }
+            
+            &:nth-child(2){
+                background-color: #333;
+            }
+        }
+    }
+}
